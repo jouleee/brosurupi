@@ -162,6 +162,14 @@ const faculties: Faculty[] = [
     ],
     image: "/fpsd.webp",
   },
+  {
+    id: "fk",
+    name: "Fakultas Kedokteran (FK)",
+    focus: "Pendidikan Dokter & Kesehatan Masyarakat",
+    description: "Program kesehatan dengan standar internasional dan fasilitas lengkap",
+    programs: ["Kedokteran (S1)", "Pendidikan Profesi Dokter"],
+    image: "/fk.webp",
+  },
 ];
 
 export default function FacultiesSection() {
