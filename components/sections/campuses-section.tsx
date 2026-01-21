@@ -6,35 +6,74 @@ const campuses = [
   {
     name: "UPI Kampus Cibiru",
     location: "Cibiru, Bandung",
-    highlights: "Pendidikan Olahraga, Fasilitas Olahraga Internasional",
-    image: "/sports-campus-athletic-facilities-training.jpg",
+    description: "Fokus pada bidang pendidikan dan teknologi",
+    programs: [
+      "Pendidikan Guru Sekolah Dasar (S1)",
+      "Pendidikan Guru Anak Usia Dini (S1)",
+      "Pendidikan Multimedia (S1)",
+      "Rekayasa Perangkat Lunak (S1)",
+      "Teknik Komputer (S1)",
+      "Pendidikan Guru Sekolah Dasar (S2)",
+    ],
+    image: "/cibiru.webp",
     icon: Building2,
   },
   {
     name: "UPI Kampus Sumedang",
     location: "Sumedang, Jawa Barat",
-    highlights: "Pendidikan Pertanian, Program Kehutanan",
+    description: "Fokus pada pendidikan guru dan bidang kesehatan/keperawatan",
+    programs: [
+      "Pendidikan Guru Sekolah Dasar (S1)",
+      "Pendidikan Guru Anak Usia Dini (S1)",
+      "Industri Pariwisata (S1)",
+      "Keperawatan (D3)",
+      "Keperawatan (S1)",
+      "Profesi Ners",
+      "Penjas (S2)",
+    ],
     image: "/sumedang.webp",
     icon: Building2,
   },
   {
     name: "UPI Kampus Tasikmalaya",
     location: "Tasikmalaya, Jawa Barat",
-    highlights: "Pendidikan Teknik, Program Kejuruan",
+    description: "Variasi prodi mencakup pendidikan, bisnis, dan desain",
+    programs: [
+      "Pendidikan Guru Sekolah Dasar (S1)",
+      "Pendidikan Guru Anak Usia Dini (S1)",
+      "Kewirausahaan (S1)",
+      "Bisnis Digital (S1)",
+      "Desain Produk Industri (S1)",
+      "Pendidikan Guru Sekolah Dasar (S2)",
+    ],
     image: "/tasik.webp",
     icon: Building2,
   },
   {
     name: "UPI Kampus Purwakarta",
     location: "Purwakarta, Jawa Barat",
-    highlights: "Pendidikan Pelatihan, Program Vokasi",
+    description: "Berorientasi pada teknologi informasi dan telekomunikasi",
+    programs: [
+      "Pendidikan Guru Sekolah Dasar (S1)",
+      "Pendidikan Guru Anak Usia Dini (S1)",
+      "Pendidikan Sistem dan Teknologi Informasi (S1)",
+      "Sistem Telekomunikasi (S1)",
+      "Mekatronika dan Kecerdasan Buatan (S1)",
+    ],
     image: "/purwakarta.webp",
     icon: Building2,
   },
   {
     name: "UPI Kampus Serang",
     location: "Serang, Banten",
-    highlights: "Pendidikan Keperawatan, Program Kesehatan",
+    description: "Spesialisasi unik di bidang kelautan dan perikanan",
+    programs: [
+      "Pendidikan Guru Sekolah Dasar (S1)",
+      "Pendidikan Guru Anak Usia Dini (S1)",
+      "Pendidikan Perikanan dan Kelautan (S1)",
+      "Logistik Kelautan (S1)",
+      "Sistem Informasi Kelautan (S1)",
+    ],
     image: "/serang.webp",
     icon: Building2,
   },
@@ -81,7 +120,20 @@ export default function CampusesSection() {
                     </h3>
                   </div>
                   <p className="text-sm font-semibold text-red-600 mb-3">{campus.location}</p>
-                  <p className="text-gray-700 text-sm leading-relaxed flex-grow">{campus.highlights}</p>
+                  <p className="text-gray-700 text-sm mb-3 font-medium">{campus.description}</p>
+                  
+                  {/* Programs List */}
+                  <div className="mt-auto pt-3 border-t border-gray-100">
+                    <p className="text-xs font-bold text-gray-900 mb-2">Program Studi:</p>
+                    <div className="space-y-1 max-h-32 overflow-y-auto pr-1">
+                      {campus.programs.map((program, idx) => (
+                        <div key={idx} className="flex items-start gap-2 text-xs text-gray-600">
+                          <span className="text-red-600 mt-1">•</span>
+                          <span>{program}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -116,7 +168,20 @@ export default function CampusesSection() {
                       </h3>
                     </div>
                     <p className="text-sm font-semibold text-red-600 mb-3">{campus.location}</p>
-                    <p className="text-gray-700 text-sm leading-relaxed flex-grow">{campus.highlights}</p>
+                    <p className="text-gray-700 text-sm mb-3 font-medium">{campus.description}</p>
+                    
+                    {/* Programs List */}
+                    <div className="mt-auto pt-3 border-t border-gray-100">
+                      <p className="text-xs font-bold text-gray-900 mb-2">Program Studi:</p>
+                      <div className="space-y-1 max-h-32 overflow-y-auto pr-1">
+                        {campus.programs.map((program, idx) => (
+                          <div key={idx} className="flex items-start gap-2 text-xs text-gray-600">
+                            <span className="text-red-600 mt-1">•</span>
+                            <span>{program}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
