@@ -28,7 +28,7 @@ const faculties: Faculty[] = [
       "Psikologi (Non-Kependidikan)",
       "Perpustakaan dan Sains Informasi (Non-Kependidikan)",
     ],
-    image: "/fip.png",
+    image: "/fip.webp",
   },
   {
     id: "fpips",
@@ -48,7 +48,7 @@ const faculties: Faculty[] = [
       "Ilmu Komunikasi (Non-Kependidikan)",
       "Sains Informasi Geografi (Non-Kependidikan)",
     ],
-    image: "/fpips.png",
+    image: "/fpips.webp",
   },
   {
     id: "fpbs",
@@ -67,7 +67,7 @@ const faculties: Faculty[] = [
       "Bahasa dan Sastra Inggris (Non-Kependidikan)",
       "Bahasa dan Sastra Indonesia (Non-Kependidikan)",
     ],
-    image: "/language-literature-education-linguistics.jpg",
+    image: "/fpbs.webp",
   },
   {
     id: "fpmipa",
@@ -87,7 +87,7 @@ const faculties: Faculty[] = [
       "Kimia (Non-Kependidikan)",
       "Ilmu Komputer (Non-Kependidikan)",
     ],
-    image: "/science-laboratory-physics-chemistry-biology.jpg",
+    image: "/fpmipa.webp",
   },
   {
     id: "fptk",
@@ -109,7 +109,7 @@ const faculties: Faculty[] = [
       "Teknik Logistik (Non-Kependidikan)",
       "Teknik Otomasi Industri dan Robotika (Non-Kependidikan)",
     ],
-    image: "/technical-education-campus-workshop-tools.jpg",
+    image: "/fptk.webp",
   },
   {
     id: "fpok",
@@ -124,7 +124,7 @@ const faculties: Faculty[] = [
       "Keperawatan (S1 & Ners) (Non-Kependidikan)",
       "Gizi (Non-Kependidikan)",
     ],
-    image: "/sports-campus-athletic-facilities-training.jpg",
+    image: "/fpok.webp",
   },
   {
     id: "fpeb",
@@ -140,7 +140,7 @@ const faculties: Faculty[] = [
       "Akuntansi (Non-Kependidikan)",
       "Ilmu Ekonomi dan Keuangan Islam (Non-Kependidikan)",
     ],
-    image: "/business-economics-management-finance.jpg",
+    image: "/fpeb.webp",
   },
   {
     id: "fpsd",
@@ -155,7 +155,7 @@ const faculties: Faculty[] = [
       "Musik (Non-Kependidikan)",
       "Film dan Televisi (Non-Kependidikan)",
     ],
-    image: "/vocational-training-campus-students-practice.jpg",
+    image: "/fpsd.webp",
   },
   {
     id: "fk",
@@ -163,7 +163,7 @@ const faculties: Faculty[] = [
     focus: "Pendidikan Dokter & Kesehatan Masyarakat",
     description: "Program kesehatan dengan standar internasional dan fasilitas lengkap",
     programs: ["Kedokteran (S1) (Non-Kependidikan)", "Pendidikan Profesi Dokter"],
-    image: "/nursing-campus-healthcare-hospital-training.jpg",
+    image: "/fk.webp",
   },
 ]
 

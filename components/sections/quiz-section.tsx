@@ -111,12 +111,12 @@ export default function QuizSection() {
         )}
 
         {/* Quiz Card */}
-        <Card className="border-2 border-red-600 shadow-2xl">
+        <Card className="border-2 border-red-600 shadow-2xl overflow-hidden rounded-xl p-0">
           {!showScore ? (
             <>
-              <CardHeader className="bg-gradient-to-r from-red-600 to-red-700 text-white">
+              <CardHeader className="bg-gradient-to-r from-red-600 to-red-700 text-white p-6 m-0 rounded-none border-0">
                 <div className="flex justify-between items-center">
-                  <CardTitle className="text-white">
+                  <CardTitle className="text-white text-xl">
                     Pertanyaan {currentQuestion + 1}/{quizQuestions.length}
                   </CardTitle>
                   <div className="bg-white/20 px-4 py-2 rounded-full text-sm font-bold text-white flex items-center gap-2">
@@ -134,7 +134,7 @@ export default function QuizSection() {
                 </div>
               </CardHeader>
 
-              <CardContent className="pt-8 space-y-8 animate-fade-in-up">
+              <CardContent className="pt-8 space-y-8 animate-fade-in-up bg-white p-6">
                 {/* Question */}
                 <h3 className="text-xl sm:text-2xl font-bold text-black leading-relaxed">
                   {quizQuestions[currentQuestion].question}

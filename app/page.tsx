@@ -19,7 +19,7 @@ export default function Home() {
       <CampusesSection />
       <AdmissionSection />
       <UKTSection />
-      <GallerySection />
+      {/* <GallerySection /> */}
       <QuizSection />
       <Footer />
     </main>

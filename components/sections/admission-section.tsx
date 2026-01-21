@@ -10,7 +10,7 @@ const admissionRoutes = [
     title: "SNBP",
     description: "Seleksi Nasional Berdasarkan Prestasi",
     details: "Bagi siswa berprestasi dengan rapor dan prestasi akademik/non-akademik yang mengesankan",
-    timeline: "Maret - Mei",
+    timeline: "5 Januari - 31 Maret 2026",
     icon: CheckCircle2,
   },
   {
@@ -18,7 +18,7 @@ const admissionRoutes = [
     title: "SNBT",
     description: "Seleksi Nasional Berbasis Tes",
     details: "Seleksi nasional dengan tes bakat skolastik dan kemampuan akademik yang komprehensif",
-    timeline: "Mei - Juli",
+    timeline: "25 Maret - 25 Mei 2026",
     icon: FileText,
   },
   {
@@ -26,15 +26,15 @@ const admissionRoutes = [
     title: "Seleksi Mandiri (SM-UPI)",
     description: "Jalur Mandiri UPI",
     details: "Seleksi mandiri dengan berbagai jalur masuk dan beasiswa unggulan untuk mahasiswa berprestasi",
-    timeline: "Berkelanjutan",
+    timeline: "26 Mei - 23 Juni 2026",
     icon: Calendar,
   },
   {
     number: "04",
-    title: "Prestasi Istimewa",
+    title: "Seleksi Mandiri - Prestasi Istimewa",
     description: "Jalur Khusus",
     details: "Untuk siswa dengan prestasi luar biasa di bidang olahraga, seni, dan akademik internasional",
-    timeline: "Sesuai Jadwal",
+    timeline: "26 Mei - 17 Juli 2026",
     icon: CheckCircle2,
   },
 ]
@@ -112,24 +112,6 @@ export default function AdmissionSection() {
                     <p className="text-xs text-gray-700 font-semibold">JADWAL PENDAFTARAN</p>
                     <p className="text-lg font-bold text-black">{admissionRoutes[activeRoute].timeline}</p>
                   </div>
-                </div>
-
-                <div className="space-y-2 bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-bold text-black text-sm">Syarat Umum</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-red-600 rounded-full"></span>
-                      Lulusan SMA/SMK atau sederajat
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-red-600 rounded-full"></span>
-                      Memiliki prestasi yang relevan
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-red-600 rounded-full"></span>
-                      Lolos verifikasi dokumen
-                    </li>
-                  </ul>
                 </div>
               </CardContent>
             </Card>
